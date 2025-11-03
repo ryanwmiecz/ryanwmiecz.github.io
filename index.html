@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ryan Miecznikowski — Resume</title>
+  <meta name="description" content="Live resume / portfolio for Ryan Miecznikowski">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Ryan M.</a>
+      <div class="tabs" role="tablist" aria-label="Primary">
+        <button class="tab active" data-target="about" role="tab" aria-selected="true">About</button>
+        <button class="tab" data-target="resume" role="tab" aria-selected="false">Resume</button>
+        <button class="tab" data-target="projects" role="tab" aria-selected="false">Projects</button>
+      </div>
+      <div class="header-actions">
+        <a class="button" href="Ryan%20Miecznikowski%20Resume.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section container tab-panel" data-panel="about" aria-hidden="false">
+      <h2>About</h2>
+      <p class="lead">Concise professional summary: replace this placeholder with your About Me content. You said you'll provide the text — paste it here or tell me and I'll add it.</p>
+    </section>
+
+    <section id="resume" class="section container tab-panel" data-panel="resume" aria-hidden="true">
+      <h2>Resume</h2>
+      <p class="muted">PDF viewer below — use the download button in the header to save the file.</p>
+      <div class="resume-embed">
+        <iframe src="Ryan%20Miecznikowski%20Resume.pdf" title="Resume PDF" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="projects" class="section container tab-panel" data-panel="projects" aria-hidden="true">
+      
+        <h2>Education</h2>
+      <p>William &amp; Mary, Williamsburg, Virginia — Bachelor of Computer Science (Exp. December 2025) • GPA: 3.53</p>
+      <p>Virginia Peninsula Community College, Williamsburg, Virginia — Associate of Computer Science (May 2023) • GPA: 3.96</p>
+      <p><strong>Related Courses:</strong> Software Engineering, Software Development, Web Programming, Applied Cyber Security, Edge Computing, Data Structures, Algorithms, Discrete Structures, Computer Organization</p>
+
+      <h2>Projects</h2>
+
+      <div class="grid" id="projectsGrid">
+          <div class="project-card">
+            <h4>Song Quiz - &Hacks XI Grand Prize Winner, Python, YouTube APIv3, Spotify API</h4>
+            <p class="muted">Fall 2025</p>
+            <ul>
+              <li>Engineered interactive music quiz game integrating YouTube Data APIv3 and Spotify API with custom animation system and UI rendering in pygame</li>
+              <li>Leveraged multithreading to handle concurrent API requests and audio processing, preventing UI freezing during audio processing</li>
+              <li>Developed in 24 hours with a 2-person team using pair programming for efficient coding, debugging, and refactoring leading to a complete project</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">YouTube APIv3</span><span class="tag">Spotify API</span><span class="tag">pygame</span></div>
+          </div>
+
+          <div class="project-card">
+            <h4>Reminiscent Dungeon - Project Coordinator, SDL2, C++</h4>
+            <p class="muted">Spring 2025</p>
+            <ul>
+              <li>Designed and implemented software architecture for a turn-based JRPG dungeon crawler with a scalable code-base enabling simple expansion in all areas of the game</li>
+              <li>Reached milestones with 2 working prototypes and a complete final demo including all original specifications</li>
+              <li>Coordinated sprint planning, task distribution, debugging, and created 4 intermediate presentations on project progress in a 4-person agile team</li>
+              <li>Developed core features including turn system, real-time class switching, animation framework, and integration of over 40 assets</li>
+            </ul>
+            <div class="project-tags"><span class="tag">C++</span><span class="tag">SDL2</span><span class="tag">Agile</span></div>
+          </div>
+
+          <div class="project-card">
+            <h4>Real-Time Parking Detection System - Edge Computing &amp; AI, Python</h4>
+            <p class="muted">Spring 2025</p>
+            <ul>
+              <li>Applied YOLOv8 object detection model for real-time parking space identification</li>
+              <li>Leveraged edge computing principles to optimize latency and reduce reliance on cloud processing</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">Edge Computing</span></div>
+          </div>
+
+          <div class="project-card">
+            <h4>Coriander’s Quest - Team Leader, &Hacks X, Godot/GDScript</h4>
+            <p class="muted">Fall 2024</p>
+            <ul>
+              <li>Created a multi-level 2D platformer with varying hazard types, asset integration, and intelligent level design</li>
+              <li>Developed under constraints of a 36-hour hackathon, showcasing strong leadership and time management by completing a working demo</li>
+              <li>Directed a 3-person team, delegating tasks and roles, using git for version control, and agile-style task distribution to ensure efficient integration of everyone's work</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Godot</span><span class="tag">GDScript</span><span class="tag">GameDev</span></div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Ryan Miecznikowski</small>
+      <div class="footer-actions">
+        
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
