@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function(){
     t.addEventListener('click', () => activatePanel(t.dataset.target));
   });
 
+  // clicking brand logo activates About tab
+  const brand = document.getElementById('brandLogo');
+  brand && brand.addEventListener('click', (e) => {
+    e.preventDefault();
+    activatePanel('about');
+  });
+
   // keyboard support for tabs
   document.querySelector('.tabs')?.addEventListener('keydown', (e) => {
     const key = e.key;
