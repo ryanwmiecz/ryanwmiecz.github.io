@@ -59,8 +59,9 @@
             <li><strong>Languages:</strong> C++, Python, JavaScript</li>
             <li><strong>Frontend:</strong> React, HTML/CSS, responsive design</li>
             <li><strong>Backend:</strong> Django, Node.js, REST APIs</li>
-            <li><strong>Databases:</strong> MongoDB, Firebase, SQL</li>
-            <li><strong>Tools:</strong> Git, GitHub, VS Code, SDL2, Linux, Docker, pytest</li>
+            <li><strong>Databases:</strong> MongoDB, Firebase, Firestore, SQLite</li>
+            <li><strong>Tools:</strong> Git, GitHub, VS Code, SDL2, Linux, Docker, Poetry, pytest</li>
+            <li><strong>Data Science:</strong> Pandas, Matplotlib, scikit-learn, sentence-transformers</li>
           </ul>
         </div>
         
@@ -68,9 +69,10 @@
           <h3 class="section-subtitle">Experience</h3>
           <ul class="clean-list">
             <li>Full-stack web applications with React and Django</li>
-            <li>Game development and architecture (C++, SDL2)</li>
-            <li>Real-time systems and performance optimization</li>
-            <li>Test suite creation and deployment pipelines</li>
+            <li>Real-time systems with Firebase/Firestore and WebSocket integration</li>
+            <li>Machine learning integration (semantic search, NLP with transformers)</li>
+            <li>Game development and architecture (C++, SDL2, Godot, GDScript)</li>
+            <li>CI/CD pipelines, containerization (Docker), and cloud deployment</li>
             <li>Agile/Scrum: Sprint planning, iterative development, team coordination</li>
           </ul>
         </div>
@@ -101,6 +103,54 @@
             <div class="project-image-carousel">
               <div class="carousel-container">
                 <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+                <div class="carousel-images" role="img" aria-label="Committee Management System project screenshots">
+                  <img src="GamePictures/ComitteeHome.PNG" alt="Committee Management System home page with committee overview and navigation" loading="lazy" class="active">
+                  <img src="GamePictures/ComitteeChatting.PNG" alt="Committee Management System chat interface with real-time messaging and parliamentary procedures" loading="lazy">
+                </div>
+                <button class="carousel-btn next" aria-label="Next image">›</button>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
+            <h4>Committee Management System - Full-Stack Developer, React, Firebase, Tailwind CSS</h4>
+            <p class="muted">Fall 2024</p>
+            <a href="https://github.com/ryanwmiecz/CSC432-Project" class="project-repo-link" target="_blank" rel="noopener">View Repository →</a>
+            <ul>
+              <li>Built real-time committee dashboard with Firestore enabling instant message synchronization across users with offline persistence and optimized read limiting to reduce database costs</li>
+              <li>Implemented parliamentary procedure system supporting Robert's Rules of Order including motion tracking, voting mechanisms with anonymous voting, and overturn procedures with complete audit history</li>
+              <li>Architected dual-mode authentication supporting both local development (localStorage) and production (Auth0 integration) while maintaining unified custom login/signup UI</li>
+              <li>Collaborated in 3-person team using Git for version control, pull requests for code review, and Netlify for continuous deployment with environment-specific Firebase configurations</li>
+            </ul>
+            <div class="project-tags"><span class="tag">React</span><span class="tag">Firebase</span><span class="tag">Firestore</span><span class="tag">Auth0</span><span class="tag">Tailwind CSS</span><span class="tag">Vite</span></div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-carousel">
+              <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+                <div class="carousel-images" role="img" aria-label="Survey Analysis Tool project screenshots">
+                  <img src="GamePictures/SurveyAnalysisHome.PNG" alt="Survey Analysis Tool home page showing survey selection and data processing options" loading="lazy" class="active">
+                  <img src="GamePictures/SurveyAnalysisDataGraph.PNG" alt="Survey Analysis Tool data visualization with interactive charts and graphs" loading="lazy">
+                </div>
+                <button class="carousel-btn next" aria-label="Next image">›</button>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
+            <h4>Survey Analysis Tool - CSC435 Software Engineering, Django, Python</h4>
+            <p class="muted">Fall 2025</p>
+            <a href="https://github.com/csci-435-fall-2025/cs435-team-3" class="project-repo-link" target="_blank" rel="noopener">View Repository → (Private)</a>
+            <ul>
+              <li>Architected Django-based web application processing Qualtrics survey data with support for 11 question types and multi-coder open coding workflow including Excel template generation</li>
+              <li>Implemented semantic code search using sentence-transformers and scikit-learn to find related coding labels through cosine similarity, accelerating the reconciliation process for research teams</li>
+              <li>Engineered reconciliation system with automated conflict resolution, coder agreement tracking, and interactive UI for finalizing coding discrepancies across multiple researchers</li>
+              <li>Containerized application with Docker for deployment on Oracle Linux, utilizing Poetry for dependency management and GitHub Actions for CI/CD with automated testing</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Django</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">Pandas</span><span class="tag">ML</span><span class="tag">Poetry</span></div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-carousel">
+              <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous image">‹</button>
                 <div class="carousel-images" role="img" aria-label="Song Quiz project screenshots">
                   <img src="GamePictures/SongquizMainMenu.png" alt="Song Quiz main menu showing colorful UI with music quiz game options" loading="lazy" class="active">
                   <img src="GamePictures/SongQuizScreen.png" alt="Song Quiz gameplay screen with song playing and answer options" loading="lazy">
@@ -111,6 +161,7 @@
             </div>
             <h4>Song Quiz - &Hacks XI Grand Prize Winner, Python, YouTube APIv3, Spotify API</h4>
             <p class="muted">Fall 2025</p>
+            <a href="https://github.com/ryanwmiecz/Music-Quiz-Fall-2025-AndHacks" class="project-repo-link" target="_blank" rel="noopener">View Repository →</a>
             <ul>
               <li>Engineered interactive music quiz game integrating YouTube Data APIv3 and Spotify API with custom animation system and UI rendering in pygame</li>
               <li>Leveraged multithreading to handle concurrent API requests and audio processing, preventing UI freezing during audio processing</li>
@@ -133,6 +184,7 @@
             </div>
             <h4>Reminiscent Dungeon - Project Coordinator, SDL2, C++</h4>
             <p class="muted">Spring 2025</p>
+            <a href="https://github.com/ryanwmiecz/ReminiscentDungeonImport" class="project-repo-link" target="_blank" rel="noopener">View Repository →</a>
             <ul>
               <li>Designed and implemented software architecture for a turn-based JRPG dungeon crawler with a scalable code-base enabling simple expansion in all areas of the game</li>
               <li>Reached milestones with 2 working prototypes and a complete final demo including all original specifications</li>
@@ -145,6 +197,7 @@
           <div class="project-card">
             <h4>Real-Time Parking Detection System - Edge Computing &amp; AI, Python</h4>
             <p class="muted">Spring 2025</p>
+            <a href="https://github.com/ryanwmiecz/EdgeComputingProject" class="project-repo-link" target="_blank" rel="noopener">View Repository →</a>
             <ul>
               <li>Applied YOLOv8 object detection model for real-time parking space identification</li>
               <li>Leveraged edge computing principles to optimize latency and reduce reliance on cloud processing</li>
@@ -166,6 +219,7 @@
             </div>
             <h4>Coriander's Quest - Team Leader, &Hacks X, Godot/GDScript</h4>
             <p class="muted">Fall 2024</p>
+            <a href="https://github.com/ryanwmiecz/2024HackathonWM" class="project-repo-link" target="_blank" rel="noopener">View Repository →</a>
             <ul>
               <li>Created a multi-level 2D platformer with varying hazard types, asset integration, and intelligent level design</li>
               <li>Developed under constraints of a 36-hour hackathon, showcasing strong leadership and time management by completing a working demo</li>
