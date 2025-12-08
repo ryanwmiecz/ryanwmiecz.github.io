@@ -13,12 +13,12 @@
       <a class="brand" href="#about" id="brandLogo" aria-label="Home">
         <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true" focusable="false" style="vertical-align:middle;margin-right:8px">
           <rect width="100" height="100" rx="18" fill="var(--accent)"></rect>
-          <text x="50" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" fill="white"></text>
+          <text x="50" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="700" fill="white">R</text>
         </svg>
         <span style="vertical-align:middle;font-weight:700">Ryan Miecznikowski</span>
       </a>
       <div class="tabs" role="tablist" aria-label="Primary">
-        <button class="tab active" data-target="about" role="tab" aria-selected="true">About</button>
+        <button class="tab active" data-target="about" role="tab" aria-selected="true">About Me</button>
         <button class="tab" data-target="resume" role="tab" aria-selected="false">Resume</button>
         <button class="tab" data-target="projects" role="tab" aria-selected="false">Projects</button>
       </div>
@@ -42,13 +42,20 @@
 
   <main>
     <section id="about" class="section container tab-panel" data-panel="about" aria-hidden="false">
-      <h2>About Me</h2>
-      <p class="lead">Software engineer with a passion for game design and full-stack development. Bachelor of Computer Science from William & Mary (December 2025).</p>
+      <div class="about-header">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p class="lead">Software engineer with a passion for game design and full-stack development. Bachelor of Computer Science from William & Mary (December 2025).</p>
+        </div>
+        <div class="about-image">
+          <img src="GamePictures/Me.png" alt="Ryan Miecznikowski professional photo" loading="lazy">
+        </div>
+      </div>
       
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+      <div class="about-grid">
         <div>
-          <h3 style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em; margin-bottom: 1rem;">Core Competencies</h3>
-          <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <h3 class="section-subtitle">Core Competencies</h3>
+          <ul class="clean-list">
             <li><strong>Languages:</strong> C++, Python, JavaScript</li>
             <li><strong>Frontend:</strong> React, HTML/CSS, responsive design</li>
             <li><strong>Backend:</strong> Django, Node.js, REST APIs</li>
@@ -58,8 +65,8 @@
         </div>
         
         <div>
-          <h3 style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em; margin-bottom: 1rem;">Experience</h3>
-          <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <h3 class="section-subtitle">Experience</h3>
+          <ul class="clean-list">
             <li>Full-stack web applications with React and Django</li>
             <li>Game development and architecture (C++, SDL2)</li>
             <li>Real-time systems and performance optimization</li>
@@ -69,7 +76,7 @@
         </div>
       </div>
       
-      <p style="margin-top: 2rem; color: var(--text-secondary);">Actively seeking opportunities in software engineering, game development, or full-stack web development where I can contribute to innovative projects and grow my technical expertise.</p>
+      <p class="closing-text">Actively seeking opportunities in software engineering, game development, or full-stack web development where I can contribute to innovative projects and grow my technical expertise.</p>
     </section>
 
     <section id="resume" class="section container tab-panel" data-panel="resume" aria-hidden="true">
@@ -91,6 +98,17 @@
 
       <div class="grid" id="projectsGrid">
           <div class="project-card">
+            <div class="project-image-carousel">
+              <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+                <div class="carousel-images" role="img" aria-label="Song Quiz project screenshots">
+                  <img src="GamePictures/SongquizMainMenu.png" alt="Song Quiz main menu showing colorful UI with music quiz game options" loading="lazy" class="active">
+                  <img src="GamePictures/SongQuizScreen.png" alt="Song Quiz gameplay screen with song playing and answer options" loading="lazy">
+                </div>
+                <button class="carousel-btn next" aria-label="Next image">›</button>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
             <h4>Song Quiz - &Hacks XI Grand Prize Winner, Python, YouTube APIv3, Spotify API</h4>
             <p class="muted">Fall 2025</p>
             <ul>
@@ -102,6 +120,17 @@
           </div>
 
           <div class="project-card">
+            <div class="project-image-carousel">
+              <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+                <div class="carousel-images" role="img" aria-label="Reminiscent Dungeon project screenshots">
+                  <img src="GamePictures/RemDungeonStart.PNG" alt="Reminiscent Dungeon title screen with JRPG-style menu interface" loading="lazy" class="active">
+                  <img src="GamePictures/RemDungeon.PNG" alt="Reminiscent Dungeon turn-based combat scene with character sprites and UI" loading="lazy">
+                </div>
+                <button class="carousel-btn next" aria-label="Next image">›</button>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
             <h4>Reminiscent Dungeon - Project Coordinator, SDL2, C++</h4>
             <p class="muted">Spring 2025</p>
             <ul>
@@ -124,7 +153,18 @@
           </div>
 
           <div class="project-card">
-            <h4>Coriander’s Quest - Team Leader, &Hacks X, Godot/GDScript</h4>
+            <div class="project-image-carousel">
+              <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+                <div class="carousel-images" role="img" aria-label="Coriander's Quest project screenshots">
+                  <img src="GamePictures/corianders%20quest%20image.png" alt="Coriander's Quest 2D platformer level with character navigating obstacles" loading="lazy" class="active">
+                  <img src="GamePictures/coriandersQuestJump.png" alt="Coriander's Quest character performing jump action in platformer level" loading="lazy">
+                </div>
+                <button class="carousel-btn next" aria-label="Next image">›</button>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
+            <h4>Coriander's Quest - Team Leader, &Hacks X, Godot/GDScript</h4>
             <p class="muted">Fall 2024</p>
             <ul>
               <li>Created a multi-level 2D platformer with varying hazard types, asset integration, and intelligent level design</li>
@@ -140,9 +180,6 @@
   <footer class="site-footer">
     <div class="container">
       <small>&copy; <span id="year"></span> Ryan Miecznikowski</small>
-      <div class="footer-actions">
-        
-      </div>
     </div>
   </footer>
 
