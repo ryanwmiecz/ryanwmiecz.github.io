@@ -48,7 +48,7 @@ body{font-family:Inter,Segoe UI,Roboto,system-ui,Arial, sans-serif; margin:0; co
 .grid{display:grid;grid-template-columns:repeat(2,minmax(360px,1fr));gap:1.25rem;align-items:stretch;grid-auto-rows:1fr}
 
 .resume-embed{height:720px;background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid rgba(2,6,23,0.06)}
-.resume-embed iframe{width:100%;height:100%;border:0}
+.resume-embed iframe{width:100%;height:100%;border:0;image-rendering:crisp-edges;image-rendering:-webkit-optimize-contrast}
 
 .project-card{display:flex;flex-direction:column;gap:0.6rem;padding:1.15rem;border-radius:10px;background:var(--card);box-shadow:0 10px 30px rgba(15,23,42,0.06);height:100%;border:1px solid rgba(2,6,23,0.04)}
 .project-card h4{margin:0;font-size:1.05rem}
